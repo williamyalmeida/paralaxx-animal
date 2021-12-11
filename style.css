@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte-padrao:sans-serif;
+    --fonte-projeto: 'Passion One', cursive;
+    --fonte-texto:'Sriracha', cursive;;
+}
+html, body {
+    height: 100%;
+    background-color: #9DB0A3;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #CFA616;
+    color: #EDEEFF;
+    font-family: var(--fonte-projeto);
+   
+    
+}
+
+header h1 {
+    padding-top: 50px;
+    font-size: 3rem;
+    font-variant: small-caps;
+    font-weight: bolder;
+
+}
+
+h1 .cor {
+    color: #5E6EC2;
+}
+
+header > p a {
+    color: #EDEEFF;
+    text-decoration: none;
+   
+    
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+header p {
+    padding-bottom: 50px;
+    font-variant: small-caps;
+    
+}
+
+section {
+    height: 100%;
+}
+
+section.texto {
+    background-color: #EDEEFF;
+}
+
+section.lorem {
+    background-color: #EDEEFF;
+}
+
+section.lorem p {
+    max-width: 500px;
+    
+    background: #96A1FB;
+    color: #EDEEFF;
+    border-radius: 0.4rem;
+    margin: 30px auto;
+    padding: 0 10px;
+    font-family: var(--fonte-texto);
+    font-size: 1.2rem;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.btn {
+    width: auto;
+    background: #96A1FB;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #EDEEFF;
+    font-family: var(--fonte-texto);
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #5E6EC2;
+    text-decoration: underline;
+}
+
+.texto .btn {
+    width: 100%;
+}
+
+
+
+section.texto .display-flex .btn {
+    margin-right: 30px;
+}
+
+section.texto .display-flex .btn:last-child {
+    margin-right: 0;
+}
+section.imagem h2 {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonte-texto);
+    color: #5E6EC2;
+    background-color: #EDEEFF;
+    font-size: 1.8rem;
+    
+    
+}
+
+.imagem {
+    width: 100%;
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.imagem#tartaruga-aquatica {
+    background-image: url('./imagem/tartaruga.jpg');
+    /* width: 100%;
+    max-width: 100%; */
+
+}
+.imagem#onca  {
+    background-image: url('./imagem/onca01.jpg');
+}
+
+.imagem#onca2 {
+    background-image: url('./imagem/onca02.jpg');
+}
+
+.imagem#urso-pardo {
+   background-image: url('./imagem/urso-pardo01.jpg');
+}
+
+
+@media only screen and (min-width:300px) and (max-width:522px){
+
+    section.imagem h2  {
+        color: red;
+    }
+
+    .imagem {
+        background-position: center center;
+        width: 100%;
+    }
+    .imagem#tartaruga-aquatica {
+        background-image: url('./imagem/min-width-300/tartaruga-300-recorte.jpg');
+    
+    }
+
+}
